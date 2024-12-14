@@ -1,6 +1,6 @@
-# pomodoro
+# Timer Tomate
 
-This template should help get you started developing with Vue 3 in Vite.
+Pomodoro Timer app free to use. It's a simple app to help you to manage your pomodoro time. You can start, stop and reset your timer.
 
 ## Recommended IDE Setup
 
