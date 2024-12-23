@@ -1,13 +1,19 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+    <q-page class="flex flex-center bg-dark">
+        <div class="text-center">
+            <timer :minutes="35" />
+        </div>
+    </q-page>
 </template>
 
 <script setup>
-//
+import Timer from 'src/components/TimerTomate.vue'
+import { defineComponent } from 'vue'
+
+defineComponent({
+    name: 'IndexPage',
+    components: {
+        Timer,
+    },
+})
 </script>
