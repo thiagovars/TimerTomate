@@ -18,6 +18,10 @@
         <q-btn class="q-ma-md" color="grey" label="Pause" @click="pauseTimer" />
         <q-btn class="q-ma-md" color="red" label="Reset" @click="resetTimer" />
     </div>
+    <div class="row justify-center">
+        <q-btn class="q-ma-md" color="blue" label="Short Break (5min)" @click="setTimer(5)" />
+        <q-btn class="q-ma-md" color="purple" label="Long Break (15min)" @click="setTimer(15)" />
+    </div>
 </template>
 <script setup>
 import { ref, onUnmounted, watch, computed } from 'vue'
@@ -63,6 +67,14 @@ const clearInterval = () => {
 
 const pauseTimer = () => {
     clearInterval()
+}
+
+const setTimer = (mins) => {
+    clearInterval()
+    countdown.value = mins * 60
+    minutes.value = mins
+    seconds.value = 0
+    displayTime()
 }
 
 const resetTimer = () => {

@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center bg-dark">
         <div class="text-center">
-            <timer :minutes="35" />
+            <timer :minutes="25" />
         </div>
     </q-page>
 </template>
