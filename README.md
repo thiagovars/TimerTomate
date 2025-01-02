@@ -7,6 +7,10 @@ Consider donating to support the project.
 
 <a href="https://www.buymeacoffee.com/thiagovars" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 150px !important;" ></a>
 
+## Demo and free version without db
+
+link: https://thiagovars.github.io
+
 ## Install the dependencies
 
 ```bash
